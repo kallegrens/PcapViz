@@ -25,6 +25,7 @@ parser.add_argument('-l', '--geolang', default='en', help='Language to use for g
 parser.add_argument('-E', '--layoutengine', default='sfdp', help='Graph layout method - dot, sfdp etc.')
 parser.add_argument('-s', '--shape', default='diamond', help='Graphviz node shape - circle, diamond, box etc.')
 parser.add_argument('-n', '--nmax', default=100, help='Automagically draw individual protocols where useful if more than --nmax nodes. 100 seems too many for any one graph.')
+parser.add_argument('--dpi', default=96, help='DPI for graph output image (default: 96)')
 
 args = parser.parse_args()
 
