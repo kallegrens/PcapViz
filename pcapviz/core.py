@@ -160,6 +160,7 @@ class GraphManager(object):
 		self.graph.label ="Layer %d traffic graph for packets from %s" % (self.layer,str(self.args.pcaps))
 
 		graph = self.get_graphviz_format()
+		graph.graph_attr['dpi'] = self.args.dpi
 		
 		for node in graph.nodes():
 			if node not in self.data:
