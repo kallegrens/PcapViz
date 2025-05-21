@@ -1,0 +1,13 @@
+name: pcapviz
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python
+  - scapy>=2.4.0
+  - matplotlib
+  - networkx
+  - maxminddb
+  - pygraphviz
